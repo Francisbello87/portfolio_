@@ -18,8 +18,9 @@ const Project = () => {
         </div>
         <div className="grid sm:grid-cols-2 h-full md:grid-cols-3 gap-6">
           {Projects.map((project) => (
-            <div>
+            <div key={project.id}>
               <motion.div
+              
                 whileInView={{ opacity: [0, 0.5, 1] }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 style={{ backgroundImage: `url(${project.image})` }}

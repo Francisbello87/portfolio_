@@ -26,7 +26,7 @@ const About = () => {
             transition={{ duration: 1 }}
           >
             <p className="font-semibold  w-full text-xl sm:text-right">
-              Hi, my name is Francis, I am a Front-End Developer.
+              Hi, my name is Francis Bello.
             </p>
           </motion.div>
           <motion.div
@@ -35,11 +35,12 @@ const About = () => {
             className="font-HindMadurai text-right text-gray-400 sm:text-left"
           >
             <p>
-              I have a Degree in Uraban and Regional Planning I have two years
-              experience working with various front-end technologies.
+              I am a professional Front-End Developer with over 2 years experience building with modern Front-end Techologies. 
+              I hold a Meta Front-end
+              Developer Certificate from Cousera.
             </p>
             <br />
-            <p>Some of the few technologies I've worked with and still use:</p>
+            
             <br />
             {/* <div className="flex flex-wrap text-[10px] md:text-base gap-x-4 gap-y-2 md:gap-y-4">
               <p className="bg-[#1e2c41] px-3 py-1 rounded-sm drop-shadow">

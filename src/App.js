@@ -3,13 +3,17 @@ import { About, Contact, Footer, Home, Project, Tech } from "./containers";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    const handleLoad = () => {
+      setLoading(false)
+    }
+    window.addEventListener('load', handleLoad);
+
+     return () => {
+      window.removeEventListener('load', handleLoad); // Clean up the event listener on component unmount
+    };
   }, []);
 
   return (
