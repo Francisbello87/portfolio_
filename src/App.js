@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 function App() {
   const [loading, setLoading] = useState(true);
 
+  const handleLoad = () => {
+    setLoading(false);
+  };
   useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
     window.addEventListener("load", handleLoad);
 
     return () => {
