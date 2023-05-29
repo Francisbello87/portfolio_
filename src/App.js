@@ -16,7 +16,7 @@ function App() {
     };
   }, []);
 
-  return !loading ? (
+  return (
     <div>
       <Navbar />
       <Home />
@@ -26,17 +26,17 @@ function App() {
       <Contact />
       <Footer />
     </div>
-  ) : (
-    <div className="w-full h-screen flex items-center justify-center">
-      <div className="wavy sm:text-3xl text-xl font-semibold">
-        <span style={{ "--i": 1 }}>F</span>
-        <span style={{ "--i": 2 }}>b</span>
-        <span style={{ "--i": 3 }}>.</span>
-        <span style={{ "--i": 4 }}>.</span>
-        <span style={{ "--i": 5 }}>.</span>
-      </div>
-    </div>
   );
+
+  // <div className="w-full h-screen flex items-center justify-center">
+  //   <div className="wavy sm:text-3xl text-xl font-semibold">
+  //     <span style={{ "--i": 1 }}>F</span>
+  //     <span style={{ "--i": 2 }}>b</span>
+  //     <span style={{ "--i": 3 }}>.</span>
+  //     <span style={{ "--i": 4 }}>.</span>
+  //     <span style={{ "--i": 5 }}>.</span>
+  //   </div>
+  // </div>
 }
 
 export default App;
