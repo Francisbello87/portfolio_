@@ -11,8 +11,9 @@ module.exports = {
         whiteColor: "#ffffff",
         bgColor: "#0a192f",
         inputColor: "#F7F7F8",
+        primaryColor: "#03A9F4",
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 };
