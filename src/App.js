@@ -7,12 +7,12 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setLoading(false)
-    }
-    window.addEventListener('load', handleLoad);
+      setLoading(false);
+    };
+    window.addEventListener("load", handleLoad);
 
-     return () => {
-      window.removeEventListener('load', handleLoad); // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
 
@@ -36,7 +36,7 @@ function App() {
           <Tech />
           <Project />
           <Contact />
-          <Footer/>
+          <Footer />
         </div>
       )}
     </div>
