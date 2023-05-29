@@ -19,16 +19,6 @@ function App() {
   return (
     <div>
       {loading ? (
-        <div>
-          <Navbar />
-          <Home />
-          <About />
-          <Tech />
-          <Project />
-          <Contact />
-          <Footer />
-        </div>
-      ) : (
         <div className="w-full h-screen flex items-center justify-center">
           <div className="wavy sm:text-3xl text-xl font-semibold">
             <span style={{ "--i": 1 }}>F</span>
@@ -37,6 +27,16 @@ function App() {
             <span style={{ "--i": 4 }}>.</span>
             <span style={{ "--i": 5 }}>.</span>
           </div>
+        </div>
+      ) : (
+        <div>
+          <Navbar />
+          <Home />
+          <About />
+          <Tech />
+          <Project />
+          <Contact />
+          <Footer />
         </div>
       )}
     </div>
