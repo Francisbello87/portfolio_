@@ -73,5 +73,5 @@ export const TechStacks = [
   { id: 6, image: images.Firebase, title: 'Firebase' },
   { id: 7, image: images.GITHUB, title: 'Github' },
   { id: 8, image: images.NODE, title: 'Node' },
-  { id: 9, image: images.MONGO, title: 'Mongo>' },
+  { id: 9, image: images.MONGO, title: 'Mongo' },
 ];

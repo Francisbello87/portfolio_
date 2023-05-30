@@ -22,7 +22,7 @@ const Tech = () => {
                 src={techstack.image}
                 alt="HTML Icon"
               />
-              <p className="mt-4">{techstack.title}</p>
+              <p className="mt-4 group-hover:text-primaryColor group-hover:font-bold">{techstack.title}</p>
             </div>
           ))}
         </div>
