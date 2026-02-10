@@ -24,13 +24,14 @@ const About = () => {
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.4 }}
-            className=""
+            className="relative"
           >
             <img
               className="mx-auto group-hover:scale-125 sca h-[350px] border border-white/10 rounded-lg transition duration-500"
               src={"/about.png"}
               alt="About graphic"
             />
+            <div className="absolute bottom-0 right-20 bg-gradient-to-r from-slate-800/80 to-slate-700 h-10 w-10 rounded-full" />
           </motion.div>
           <motion.div
             whileInView={{ x: [200, 0], opacity: [0, 0.5, 1] }}
