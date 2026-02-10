@@ -44,8 +44,11 @@ const Footer = () => {
       </div>
       <div className="sm:flex hidden items-center justify-center">
         <p className="text-sm flex items-center text-gray-400">
-          <AiOutlineCopyright className="mr-2" /> 2023,{" "}
-          <span className="font-semibold text-lg ml-2"> Francis Bello.</span>{" "}
+          <AiOutlineCopyright className="mr-2" /> 2026,{" "}
+          <span className="font-semibold text-lg ml-2">
+            {" "}
+            Francis Bello.
+          </span>{" "}
         </p>
       </div>
     </div>

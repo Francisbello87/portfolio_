@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="bg-bgColor w-full h-screen flex items-center justify-center mx-auto px-8 pt-20 md:pt-40 pb-32 md:mt-80"
+      className="bg-bgColor w-full h-screen flex items-center justify-center mx-auto px-4 pt-20 pb-32"
     >
       <form
-      method="POST"
+        method="POST"
         action="https://getform.io/f/07b08aa4-a0e5-40d0-844a-3b681153b8f8"
         className="flex text-gray-300 flex-col max-w-[600px] w-full"
       >
@@ -39,7 +39,10 @@ const Contact = () => {
           required
           rows="10"
         ></textarea>
-        <motion.button whileTap={{scale: 1.1}} className="px-5 bg-primaryColor py-2 my-4 mx-auto flex items-center hover:bg-[#ff607f] drop-shadow-lg font-Montserrat font-bold text-gray-300">
+        <motion.button
+          whileTap={{ scale: 1.1 }}
+          className="px-5 bg-primaryColor py-2 my-4 mx-auto flex items-center hover:bg-[#ff607f] drop-shadow-lg font-Montserrat font-bold text-gray-300"
+        >
           Let's chat!
         </motion.button>
       </form>

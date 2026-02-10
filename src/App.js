@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import { About, Contact, Footer, Home, Project, Tech } from "./containers";
-import { useEffect, useState } from "react";
 
 function App() {
   // const [loading, setLoading] = useState(true);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   FaBars,
   FaTimes,
@@ -7,45 +7,82 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import {NavLink} from 'react-router-dom'
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [active, setActive] = useState('')
   const handleClick = () => setNav(!nav);
   return (
     <div className="fixed w-full z-10 h-20 justify-between items-center flex px-7 md:px-32 bg-[#0a192f] text-gray-300">
       <div className="content px-7 ">
-        <Link to="home" smooth={true} duration={500} className="text-5xl logo cursor-pointer">FB</Link>
-        <Link to="home" smooth={true} duration={500} className="text-5xl logo cursor-pointer">FB</Link>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="text-5xl logo cursor-pointer"
+        >
+          FB
+        </Link>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="text-5xl logo cursor-pointer"
+        >
+          FB
+        </Link>
       </div>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex font-HindMadurai ">
         <li>
-          <Link to="home" smooth={true} duration={500} className="active active:text-primaryColor">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="active active:text-primaryColor"
+          >
             Home
           </Link>
-        </li >
+        </li>
         <li>
-          <Link to="about" smooth={true} duration={500} className="active active:text-primaryColor">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="active active:text-primaryColor"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="tech" smooth={true} duration={500} className="active active:text-primaryColor">
+          <Link
+            to="tech"
+            smooth={true}
+            duration={500}
+            className="active active:text-primaryColor"
+          >
             Tech.
           </Link>
         </li>
         <li>
-          <Link to="project" smooth={true} duration={500} className="active active:text-primaryColor">
+          <Link
+            to="project"
+            smooth={true}
+            duration={500}
+            className="active active:text-primaryColor"
+          >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} className="active active:text-primaryColor">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="active active:text-primaryColor"
+          >
             Contact
           </Link>
         </li>
@@ -129,7 +166,6 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="mailto:bellofrancis91@gmail.com"
-              
             >
               E-mail <HiOutlineMail size={30} />
             </a>

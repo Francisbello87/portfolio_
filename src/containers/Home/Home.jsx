@@ -8,7 +8,7 @@ import animationData from "../../assets/developer.json";
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-bgColor">
-      <motion.div className="max-w-[1000px] mx-auto px-8 flex items-center justify-center sm:justify-between flex-wrap-reverse sm:flex-nowrap text-center sm:text-left h-full">
+      <motion.div className="max-w-[1000px] mx-auto px-4 flex items-center justify-center sm:justify-between flex-wrap-reverse sm:flex-nowrap text-center sm:text-left h-full">
         <div className="">
           <p className="text-gray-400  font-HindMadurai">Hi, my name is</p>
           <motion.h1
@@ -20,24 +20,33 @@ const Home = () => {
           </motion.h1>
           <motion.h2
             whileInView={{ x: [-240, 0], opacity: [0, 0.5, 1] }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
             className="text-2xl text-[#8892b0] sm:text-5xl font-bold shimmer"
           >
-            I'm a Front-End Developer
+            Frontend Engineer
           </motion.h2>
           <motion.p
             whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 1.2, delay: 1.2 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="text-[#8892b0] py-4 max-w-[700px] font-HindMadurai"
           >
-            I specialize in delivering high-quality products and services by
-            creating better user interfaces and experiences which make web and
-            mobile applications easier and pleasant to use.
+            I build and ship production-ready web and mobile interfaces using
+            React, Next.js, and React Native. Experienced in delivering scalable
+            UIs, integrating APIs, and collaborating with product teams to ship
+            features efficiently.
+          </motion.p>
+          <motion.p
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-[#8892b0] text-xs py-4 max-w-[700px] font-HindMadurai"
+          >
+            Most recent work includes client and internal production projects
+            (private repositories).
           </motion.p>
           <div className="text-center sm:block flex items-center justify-center mt-3">
             <motion.button
               whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 1.4, delay: 1.4 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               className="text-white group border-2 px-4 py-3 flex items-center justify-center hover:bg-primaryColor   "
             >
               <Link to="project" smooth={true} duration={500}>
@@ -51,7 +60,7 @@ const Home = () => {
         </div>
         <motion.div
           whileInView={{ opacity: [0, 1] }}
-          transition={{ duration: 1.6, delay: 1.6 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
           className="flex items-center justify-center mt-20"
         >
           <Lottie
