@@ -14,7 +14,7 @@ import quiz from "../assets/quiz.png";
 import portfolio from "../assets/portfolio.png";
 import raychills from "../assets/raychills.png";
 
-export default {
+const assets = {
   omni,
   blog,
   weather,
@@ -31,3 +31,5 @@ export default {
   REACT,
   Tailwind,
 };
+
+export default assets;
