@@ -35,7 +35,7 @@ const About = () => {
           <motion.div
             whileInView={{ x: [200, 0], opacity: [0, 0.5, 1] }}
             transition={{ duration: 0.6 }}
-            className="font-HindMadurai md:text-right text-gray-400 sm:text-left"
+            className="font-HindMadurai text-gray-400 sm:text-left"
           >
             <p>
               I’m a frontend engineer focused on building and shipping
